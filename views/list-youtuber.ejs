@@ -1,0 +1,26 @@
+<%- include('./partials/head.ejs') %>
+<body>
+    <br>
+    <h1>List YouTuber on YGDb</h1>
+<%- include('./partials/navbar.ejs') %>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Subscribers</th>
+                <th>Photo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% youtuber.forEach(el => { %>
+                <tr>
+                    <td><a href="/youtuber-profile/<%= el.name %>"><%= el.name %></a></td>
+                    <td><%= el.gender %></td>
+                    <td><%= el.subscribers %></td>
+                    <td><img src="<%= el.photo_link %>" alt="PewDiePie" style="width:500px;"></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>

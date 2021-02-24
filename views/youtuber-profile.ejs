@@ -1,0 +1,14 @@
+<%- include('./partials/head.ejs') %>
+<br>
+<%- include('./partials/navbar.ejs') %>
+<h1><%= youtuber.name %></h1>
+<p>Subscribers:</p>
+<p><%= youtuber.subscribers %></p>
+<img src="<%= youtuber.photo_link %>" alt="PewDiePie" style="width:500px;">
+<p><a href="<%= youtuber.youtube_link %>" target="_blank" rel="noopener noreferrer">Visit him on YouTube!</a></p>
+<p>About him:</p>
+<p><%= youtuber.about_youtuber %></p>
+<p>Birth place:</p>
+<p><%= youtuber.birth_place %></p>
+<p>Birth year:</p>
+<p><%= youtuber.birth_year %></p>

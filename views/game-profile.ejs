@@ -1,0 +1,13 @@
+<%- include('./partials/head.ejs') %>
+<br>
+<%- include('./partials/navbar.ejs') %>
+<h1><%= game.name %></h1>
+<p>Genre:</p>
+<p><%= game.genre %></p>
+<img src="<%= game.photo_link %>" alt="<%= game.name %>" style="width:500px;">
+<p>Description:</p>
+<p><%= game.description %></p>
+<p>Developer:</p>
+<p><%= game.game_developer %></p>
+<p>Released year:</p>
+<p><%= game.released_year %></p>
