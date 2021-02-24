@@ -26,7 +26,7 @@ module.exports = {
       },
       about_youtuber: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING(9999)
       },
       youtube_link: {
         allowNull: false,
