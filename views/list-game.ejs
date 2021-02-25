@@ -1,24 +1,18 @@
 <%- include('./partials/head.ejs') %>
 <body>
-    <br>
-    <h1>List Game on YGDb</h1>
-<%- include('./partials/navbar.ejs') %>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Genre</th>
-                <th>Photo</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div>
+        <div class="body">
             <% game.forEach(el => { %>
-                <tr>
-                    <td><a href="/game-profile/<%= el.name %>"><%= el.name %></a></td>
-                    <td><%= el.genre %></td>
-                    <td><img src="<%= el.photo_link %>" alt="<%= el.name %>" style="width:500px;"></td>
-                </tr>
+                <div class="cards">
+                    <div class="card-image">
+                        <a href="/game-profile/<%= el.name %>"><img src="<%= el.photo_link %>" width="280px" height="400px"></a>
+                    </div>
+                    <div class="item-name">
+                        <h4><a href="/game-profile/<%= el.name %>"><%= el.name %></a></h4>
+                        <h5><%= el.genre %></h5>
+                    </div>
+                </div>
             <% }) %>
-        </tbody>
-    </table>
+        </div>
+    </div>
 </body>

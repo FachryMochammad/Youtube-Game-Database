@@ -6,7 +6,9 @@ class Controller {
     }
 
     static listYoutuber(req, res) {
-        Youtuber.findAll()
+        Youtuber.findAll({
+            order: [['subscribers', 'desc']]
+        })
         .then(youtuber => res.render('list-youtuber', { youtuber }))
         .catch(err => res.send(err))
     }
@@ -27,7 +29,8 @@ class Controller {
         })
         .then(data => {
             let game = data;
-            res.render('youtuber-profile', { youtuber, msg, game })
+            let age = Youtuber.getAge(youtuber.birth_year);
+            res.render('youtuber-profile', { youtuber, msg, game, age })
         })
         .catch(err => res.send(err))
     }
@@ -91,13 +94,12 @@ class Controller {
             else return Subscribe.create(input)
             if (!data.length) return Subscribe.create(input)
         })
-        .then(() => res.redirect(`/youtuber-profile/${youtuberName}`))
+        .then(() => res.redirect(`/youtuber-profile/${youtuberName}?msg= `))
         .catch(err => res.send(err))
     }
 
     static unsubscribe(req, res) {
         let youtuberName = req.params.name;
-        console.log(req.params.id, req.session.user.id);
         Subscribe.destroy({
             where: {
                 youtuber_id: +req.params.id,

@@ -21,6 +21,11 @@ module.exports = (sequelize, DataTypes) => {
         return this.subscribers
       }
     }
+    static getAge(birth_year) {
+      let currentYear = new Date().getFullYear();
+      let age = currentYear - birth_year;
+      return age;
+    }
   };
   Youtuber.init({
     name: DataTypes.STRING,
