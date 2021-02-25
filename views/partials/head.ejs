@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <title>YouTube Gaming Database</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        body{
+            margin-top: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: brown;
+        }
+        #navbar{
+            list-style-type: none;
+            display: inline-block;
+            text-decoration: none;
+            width: 100vw;
+            background-color: brown;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            padding: 0.5vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        #navbar ul{
+            display: flex;
+        }
+
+        #navbar li{
+            list-style-type: none;
+            margin: 0 1vw;
+        }
+
+        #navbar li a{
+            padding: 1vw;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cards{
+            flex-direction: column;
+            display: flex;
+            border-radius: 5px;
+            margin: 78px;
+        }
+
+        .card-image{
+            display: flex;
+            justify-content: center;
+        }
+        .card-image img:hover{
+            width: 300px;
+            height: 460px;
+            cursor: pointer;
+        }
+        .card-image img{
+            border-top-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .item-name{
+            align-items: flex-start;
+            margin: 0 5px;
+            color: black;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .item-name h5{
+            background-color: #fff;
+            color: black;
+            border-radius: 50px;
+            width: 20%;
+            align-items: center;
+            text-align: center;
+            padding: 0 px;
+        }
+
+        .item-name h5:hover{
+            background-color: black;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="/" style="font-size: 30px;">YGDb</a></li>
+                    <li><a href="/youtubers">YouTubers</a></li>
+                    <li><a href="/games">Games</a></li>
+                    <li><a href="/youtuber-charts">YouTuber Gaming Charts</a></li>
+                    <li><a href="/profile/">Profile</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>

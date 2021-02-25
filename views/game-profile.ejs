@@ -1,0 +1,41 @@
+<%- include('./partials/head.ejs') %>
+<body style="margin: 0 30px;">
+    <div style="margin-top: 100px;">
+        <h1><%= game.name %></h1>
+        <p><%= game.genre %></p>
+        <div style="display: flex; justify-content: space-around;">
+            <div>
+                <img src="<%= game.photo_link %>" alt="<%= game.name %>" style="width:500px;">
+            </div>
+            <div style="margin: 0 30px;">
+                <p style="font-weight: bold;">Description:</p>
+                <p><%= game.description %></p>
+                <p style="font-weight: bold;">Developer:</p>
+                <p><%= game.game_developer %></p>
+                <p style="font-weight: bold;">Released year:</p>
+                <p><%= game.released_year %></p>
+            </div>
+        </div>
+        <h2>Who's YouTuber that play <%= game.name %>?</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Photo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% game.YoutuberGames.forEach(el1 => { %>
+                    <tr>
+                        <% youtuber.forEach(el2 => { %>
+                            <% if (el1.youtuber_id === el2.id) { %>
+                                <td><a href="/youtuber-profile/<%= el2.name %>"><%= el2.name %></a></td>
+                                <td><a href="/youtuber-profile/<%= el2.name %>"><img src="<%= el2.photo_link %>" width="280px" height="400px"></a></td>
+                            <% } %>
+                        <% }) %>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>

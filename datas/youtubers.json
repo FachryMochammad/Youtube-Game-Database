@@ -1,0 +1,72 @@
+[
+    {
+        "name": "PewDiePie",
+        "gender": "male",
+        "birth_year": 1989,
+        "birth_place": "Gothenburg, Sweden",
+        "about_youtuber": "Felix Arvid Ulf Kjellberg, known online as PewDiePie, is a Swedish YouTuber and comedian, known primarily for his Let's Play videos and comedic formatted shows. Born and raised in Gothenburg, Sweden, Kjellberg registered his YouTube channel 'PewDiePie' in 2010, primarily posting Let's Play videos of horror and action video games. His channel experienced substantial growth in popularity over the next two years and he reached 1 million subscribers in July 2012. Over time, his style of content diversified to include vlogs, comedy shorts, formatted shows, and music videos. Kjellberg's channel became the most-subscribed on YouTube on 15 August 2013, but after he publicly vied for the title with T-Series in 2019, it currently holds the title of the second-most subscribed, albeit remaining the most-subscribed operated by an individual.",
+        "youtube_link": "https://www.youtube.com/user/PewDiePie",
+        "subscribers": 109251687,
+        "photo_link": "https://i.dailymail.co.uk/i/pix/2016/09/01/16/37CCC41700000578-3769120-image-a-1_1472745260057.jpg"
+    },
+    {
+        "name": "Eva Celia",
+        "gender": "female",
+        "birth_year": 1992,
+        "birth_place": "Jakarta, Indonesia",
+        "about_youtuber": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor suscipit natus delectus qui inventore quia doloribus placeat aliquam nisi veniam vero eos accusamus debitis, ullam eius reiciendis tenetur velit illo repellendus repudiandae ducimus? Obcaecati, molestiae. Animi voluptate facere ea. Magnam, tempore? Maxime autem numquam qui officia eaque quos repudiandae?",
+        "youtube_link": "https://www.youtube.com/channel/UCetTIx6qFZe9xdOh1i5GMJQ",
+        "subscribers": 1496,
+        "photo_link": "https://1.bp.blogspot.com/-VKNdFEymirU/WFcxBJLWqKI/AAAAAAAABmM/nKRYPa_dC94383Sk1R1XGqdKMgc3ETrvACLcB/s400/3d4e373f_Eva%2BCelia.jpg"
+    },
+    {
+        "name": "Wardell",
+        "gender": "male",
+        "birth_year": 1998,
+        "birth_place": "Vancouver, Canada",
+        "about_youtuber": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor suscipit natus delectus qui inventore quia doloribus placeat aliquam nisi veniam vero eos accusamus debitis, ullam eius reiciendis tenetur velit illo repellendus repudiandae ducimus? Obcaecati, molestiae. Animi voluptate facere ea. Magnam, tempore? Maxime autem numquam qui officia eaque quos repudiandae?",
+        "youtube_link": "https://www.youtube.com/channel/UCYg5NWc3B8RuarSFQR8n2VA",
+        "subscribers": 276975,
+        "photo_link": "https://prosettings.net/wp-content/uploads/2020/06/wardell-profile-picture.jpg"
+    },
+    {
+        "name": "Shroud",
+        "gender": "male",
+        "birth_year": 1994,
+        "birth_place": "Toronto, Canada",
+        "about_youtuber": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor suscipit natus delectus qui inventore quia doloribus placeat aliquam nisi veniam vero eos accusamus debitis, ullam eius reiciendis tenetur velit illo repellendus repudiandae ducimus? Obcaecati, molestiae. Animi voluptate facere ea. Magnam, tempore? Maxime autem numquam qui officia eaque quos repudiandae?",
+        "youtube_link": "https://www.youtube.com/channel/UCoz3Kpu5lv-ALhR4h9bDvcw",
+        "subscribers": 6712832,
+        "photo_link": "https://marriedwiki.com/uploads/2018/12/shroud-1.jpg"
+    },
+    {
+        "name": "Dr Disrespect",
+        "gender": "male",
+        "birth_year": 1982,
+        "birth_place": "California, United States",
+        "about_youtuber": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor suscipit natus delectus qui inventore quia doloribus placeat aliquam nisi veniam vero eos accusamus debitis, ullam eius reiciendis tenetur velit illo repellendus repudiandae ducimus? Obcaecati, molestiae. Animi voluptate facere ea. Magnam, tempore? Maxime autem numquam qui officia eaque quos repudiandae?",
+        "youtube_link": "https://www.youtube.com/user/DrDisRespect",
+        "subscribers": 3263765,
+        "photo_link": "https://prosettings.net/wp-content/uploads/2018/09/drdisrespect-profile-picture.jpg"
+    },
+    {
+        "name": "MrBeast",
+        "gender": "male",
+        "birth_year": 1998,
+        "birth_place": "Kansas, United States",
+        "about_youtuber": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor suscipit natus delectus qui inventore quia doloribus placeat aliquam nisi veniam vero eos accusamus debitis, ullam eius reiciendis tenetur velit illo repellendus repudiandae ducimus? Obcaecati, molestiae. Animi voluptate facere ea. Magnam, tempore? Maxime autem numquam qui officia eaque quos repudiandae?",
+        "youtube_link": "https://www.youtube.com/user/MrBeast6000",
+        "subscribers": 54234964,
+        "photo_link": "https://www.fotolog.com/wp-content/uploads/2019/06/Mr-Beast-Net-Worth.jpg"
+    },
+    {
+        "name": "TenZ",
+        "gender": "male",
+        "birth_year": 2001,
+        "birth_place": "Toronto, Canada",
+        "about_youtuber": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor suscipit natus delectus qui inventore quia doloribus placeat aliquam nisi veniam vero eos accusamus debitis, ullam eius reiciendis tenetur velit illo repellendus repudiandae ducimus? Obcaecati, molestiae. Animi voluptate facere ea. Magnam, tempore? Maxime autem numquam qui officia eaque quos repudiandae?",
+        "youtube_link": "https://www.youtube.com/channel/UCckPYr9b_iVucz8ID1Q67sw",
+        "subscribers": 450239,
+        "photo_link": "https://gamepedia.cursecdn.com/valorant_esports_gamepedia_en/c/c9/TenZ.png"
+    }
+]

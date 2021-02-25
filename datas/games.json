@@ -1,0 +1,42 @@
+[
+    {
+        "name": "VALORANT",
+        "genre": "FPS",
+        "description": "Valorant (stylized as VALORANT) is a free-to-play multiplayer tactical first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by official release on June 2, 2020. Development of the game started in 2014.",
+        "released_year": 2020,
+        "game_developer": "Riot Games",
+        "photo_link": "https://cdn1.dotesports.com/wp-content/uploads/2020/03/01103643/valorant_jett_duotoned.jpg"
+    },
+    {
+        "name": "Dota 2",
+        "genre": "MOBA",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae omnis dolorem expedita pariatur rem ea impedit vitae, eius repellendus suscipit voluptates, natus praesentium fuga mollitia sint labore saepe aliquid quisquam veritatis at adipisci. Provident alias, nihil aut atque quos qui quia deserunt delectus nesciunt harum ut officia veniam tempore quibusdam?",
+        "released_year": 2013,
+        "game_developer": "Valve",
+        "photo_link": "https://4.bp.blogspot.com/-82eQjCO9nyg/WqnJbWBBZII/AAAAAAAAQSs/XLMrKApMGJABnVPRm8YEr34N3CeY4ZoswCLcBGAs/s1600/Dota%2B2%2Bwww.pcgamefreetop.net.jpg"
+    },
+    {
+        "name": "Counter-Strike: Global Offensive",
+        "genre": "FPS",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae omnis dolorem expedita pariatur rem ea impedit vitae, eius repellendus suscipit voluptates, natus praesentium fuga mollitia sint labore saepe aliquid quisquam veritatis at adipisci. Provident alias, nihil aut atque quos qui quia deserunt delectus nesciunt harum ut officia veniam tempore quibusdam?",
+        "released_year": 2012,
+        "game_developer": "Valve",
+        "photo_link": "https://vignette.wikia.nocookie.net/cswikia/images/1/1e/Csgo_steam_store_header_latest.jpg/revision/latest?cb=20170630034202"
+    },
+    {
+        "name": "Minecraft",
+        "genre": "FPS",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae omnis dolorem expedita pariatur rem ea impedit vitae, eius repellendus suscipit voluptates, natus praesentium fuga mollitia sint labore saepe aliquid quisquam veritatis at adipisci. Provident alias, nihil aut atque quos qui quia deserunt delectus nesciunt harum ut officia veniam tempore quibusdam?",
+        "released_year": 2011,
+        "game_developer": "Mojang",
+        "photo_link": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"
+    },
+    {
+        "name": "PlayerUknown's Battlegrounds",
+        "genre": "FPS",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae omnis dolorem expedita pariatur rem ea impedit vitae, eius repellendus suscipit voluptates, natus praesentium fuga mollitia sint labore saepe aliquid quisquam veritatis at adipisci. Provident alias, nihil aut atque quos qui quia deserunt delectus nesciunt harum ut officia veniam tempore quibusdam?",
+        "released_year": 2017,
+        "game_developer": "PUBG Corporation",
+        "photo_link": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/PlayerUnknown's_Battlegrounds_Steam_Logo.jpg/220px-PlayerUnknown's_Battlegrounds_Steam_Logo.jpg"
+    }
+]
