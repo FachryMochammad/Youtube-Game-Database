@@ -1,0 +1,93 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #f4f9f9;
+        color: black;
+    }
+
+    .title{
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5rem;
+        bottom: -90px;
+    }
+    .content{
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.50);
+        padding: 2rem;
+        border-radius: 15px;
+        outline-style: none
+    }
+    .login{
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+    .login:hover{
+        color: #314e52;
+    }
+    .input-text{
+        margin:1.5rem;
+    }
+
+    .input-text input{
+        padding: 0.5rem 10px;
+        border-radius: 10px;
+        outline-style: none;
+        border: none;
+    }
+    .button button {
+        padding: 7px 30px;
+        border-radius: 10px;
+        outline-style: none;
+        background-color:brown ;
+        color: white;
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .button button:hover{
+        background-color:white ;
+        color: brown;
+        cursor: pointer;
+    }
+</style>
+<div>
+    <div class="title">
+        <h2>YGDb</h2>
+    </div>
+    <div class="content">
+        <div class="login" style="display: flex; justify-content: space-around;">
+            <div>
+                <h4><a href="/login" class="login" style="color: black; text-decoration: none;">Login</a></h4>
+            </div>
+            <div>
+                <h4><a href="/signup" class="login" style="color: black; text-decoration: none;">Sign Up</a></h4>
+            </div>
+        </div>
+        <% if (errors) { %>
+            <p style="color: brown;"><%= errors %></p>
+        <% } %>
+        <form action="/signup" method="post">
+            <div class="input-text">
+                <input type="text" name="name" placeholder="Your Fullname">
+            </div>
+            <div class="input-text">
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="input-text">
+                <input type="password" name="password" placeholder="Create a password">
+            </div>
+            <div class="button">
+                <button>Sign Up</button>
+            </div>
+        </form>
+    </div>
+</div>

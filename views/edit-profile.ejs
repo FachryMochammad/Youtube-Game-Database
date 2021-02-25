@@ -1,0 +1,55 @@
+<%- include('./partials/head.ejs') %>
+<style>
+    .input-text{
+        margin:1.5rem;
+    }
+
+    .input-text input{
+        padding: 0.5rem 10px;
+        border-radius: 10px;
+        outline-style: none;
+        border: none;
+    }
+    .button button {
+        padding: 7px 30px;
+        border-radius: 10px;
+        outline-style: none;
+        background-color:brown;
+        color: white;
+        border: none;
+        font-size: 13px;
+        font-weight: bolder;
+    }
+
+    .button button:hover{
+        cursor: pointer;
+    }
+    .textbox {
+        border: 1px solid #848484;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        outline:0;
+        height:25px;
+        width: 230px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+</style>
+<body style="margin: 0 30px;">
+    <div style="margin-top: 100px;">
+        <h1>Edit Account</h1>
+        <% if (errors) { %>
+            <p style="color: brown;"><%= errors %></p>
+        <% } %>
+        <form action="/edit-profile/<%= user.username %>" method="post">
+            <label>Name</label>
+            <p><input type="text" value="<%= user.name %>" name="name" class="textbox"></p><br>
+            <label>Userame</label>
+            <p><input type="text" value="<%= user.username %>" name="username" class="textbox"></p><br>
+            <div class="button">
+                <button type="submit" class="button">Update Your Account</button>
+            </div>
+        </form>
+    </div>
+</body>

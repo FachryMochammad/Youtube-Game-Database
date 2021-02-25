@@ -1,0 +1,41 @@
+<%- include('./partials/head.ejs') %>
+<style>
+    .button button {
+        padding: 7px 30px;
+        border-radius: 10px;
+        outline-style: none;
+        background-color:wheat;
+        border: none;
+        font-size: 13px;
+        font-weight: bolder;
+    }
+
+    .button button:hover{
+        cursor: pointer;
+    }
+</style>
+<body style="margin: 0 30px;">
+    <div style="margin-top: 100px;">
+        <h1> Hai, <%= user.name %>!</h1>
+        <a href="/edit-profile/<%= user.username %>">Edit your account</a>
+        <h2>Subscriptions</h2>
+        <table>
+            <tbody>
+                <% subscribe.forEach(el1 => { %>
+                    <tr>
+                        <% youtuber.forEach(el2 => { %>
+                            <% if (el1.youtuber_id === el2.id) { %>
+                                <td><a href="/youtuber-profile/<%= el2.name %>"><%= el2.name %></a></td>
+                                <td>
+                                <div class="button">
+                                    <button><a href="/unsubscribe/<%= el2.id %>/<%= el2.name %>">UNSUBSCRIBE</a></button>
+                                </div>
+                                </td>
+                            <% } %>
+                        <% }) %>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>

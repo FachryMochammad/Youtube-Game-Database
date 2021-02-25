@@ -1,0 +1,50 @@
+[
+    {
+        "youtuber_id": 3,
+        "game_id": 1
+    },
+    {
+        "youtuber_id": 4,
+        "game_id": 1
+    },
+    {
+        "youtuber_id": 7,
+        "game_id": 1
+    },
+    {
+        "youtuber_id": 1,
+        "game_id": 5
+    },
+    {
+        "youtuber_id": 2,
+        "game_id": 5
+    },
+    {
+        "youtuber_id": 4,
+        "game_id": 5
+    },
+    {
+        "youtuber_id": 5,
+        "game_id": 5
+    },
+    {
+        "youtuber_id": 1,
+        "game_id": 4
+    },
+    {
+        "youtuber_id": 2,
+        "game_id": 4
+    },
+    {
+        "youtuber_id": 6,
+        "game_id": 4
+    },
+    {
+        "youtuber_id": 3,
+        "game_id": 3
+    },
+    {
+        "youtuber_id": 7,
+        "game_id": 3
+    }
+]

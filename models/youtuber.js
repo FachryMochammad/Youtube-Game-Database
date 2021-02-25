@@ -7,6 +7,24 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Youtuber.belongsToMany(models.Game, { through : models.YoutuberGame, foreignKey : "youtuber_id" })
       Youtuber.hasMany(models.YoutuberGame, { foreignKey: "youtuber_id" })
+      Youtuber.belongsToMany(models.User, { through : models.Subscribe, foreignKey : "youtuber_id" })
+      Youtuber.hasMany(models.Subscribe, { foreignKey: "youtuber_id" })
+    }
+    customTotalSubs() {
+      if (this.subscribers > 1000000) {
+        let beforeM = Math.round(this.subscribers / 1000000)
+        return this.subscribers = `${beforeM}M`
+      } else if (this.subscribers > 1000) {
+        let beforeK = Math.round(this.subscribers / 1000)
+        return this.subscribers = `${beforeK}K`
+      } else {
+        return this.subscribers
+      }
+    }
+    static getAge(birth_year) {
+      let currentYear = new Date().getFullYear();
+      let age = currentYear - birth_year;
+      return age;
     }
   };
   Youtuber.init({
