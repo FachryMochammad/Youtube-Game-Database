@@ -64,7 +64,9 @@ class Controller {
     static userProfile(req, res) {
         let user = req.session.user;
         let subscribe;
-        Subscribe.findAll()
+        Subscribe.findAll({
+            where: { user_id: user.id }
+        })
         .then(data => {
             subscribe = data;
             return Youtuber.findAll()
