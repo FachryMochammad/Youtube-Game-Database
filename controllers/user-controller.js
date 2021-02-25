@@ -4,7 +4,8 @@ const bcrypt = require('bcryptjs');
 
 class UserController {
     static login(req, res) {
-        res.render('login')
+        let errors = req.query.errors
+        res.render('login', { errors })
     }
 
     static postLogin(req, res) {
@@ -22,16 +23,16 @@ class UserController {
                     name: user.name
                 }
                 res.redirect('/')
-            } else res.send(`login failed, username / password is incorrect!`)
+            } else res.redirect(`/login?errors=Your username / password is incorrect!`)
         })
         .catch(err => {
-            console.log(err);
-            res.send(err)
+            res.redirect(`/login?errors=Your username / password is incorrect!`)
         })
     }
 
     static signup(req, res) {
-        res.render('signup')
+        let errors = req.query.errors;
+        res.render('signup', { errors })
     }
 
     static postSignup(req, res) {
@@ -42,7 +43,13 @@ class UserController {
         }
         User.create(input)
         .then(() => res.redirect('/login'))
-        .catch(err => res.send(err))
+        .catch(err => {
+            let errors = [];
+            err.errors.forEach(el => {
+                errors.push(el.message)
+            })
+            res.redirect(`/signup?errors=${errors}`)
+        })
     }
 
     static logout(req, res) {

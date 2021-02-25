@@ -72,6 +72,9 @@
                 <h4><a href="/signup" class="login" style="color: black; text-decoration: none;">Sign Up</a></h4>
             </div>
         </div>
+        <% if (errors) { %>
+            <p style="color: brown;"><%= errors %></p>
+        <% } %>
         <form action="/signup" method="post">
             <div class="input-text">
                 <input type="text" name="name" placeholder="Your Fullname">

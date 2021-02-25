@@ -1,0 +1,49 @@
+<%- include('./partials/head.ejs') %>
+<body style="margin: 0 150px;">
+    <div style="margin-top: 100px; width: 1000px;">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontColor = '#777';
+
+        let chart = new Chart(myChart, {
+        type: 'bar',
+        data: {
+            labels: ['PewDiePie', 'MrBeast', 'Shroud',  'Dr Disrespect', 'TenZ', 'Wardell', 'Eva Celia'],
+            datasets: [{
+                label: 'Subscribers',
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(255, 159, 64, 0.6)',
+                    'rgba(255, 99, 132, 0.6)'
+                ],
+                borderWidth: 1,
+                borderColor: '#777',
+                hoverBorderWidth: 3,
+                hoverBorderColor: '#000',
+                data: [109251687, 54234964, 6712832, 3263765, 450239, 276975, 1496]
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'YouTuber Gaming Charts',
+                fontSize: 25
+            },
+            legend: {
+                display: false
+            }
+        }
+        });
+    </script>
+</body>
+</html>

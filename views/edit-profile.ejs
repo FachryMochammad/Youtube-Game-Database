@@ -39,6 +39,9 @@
 <body style="margin: 0 30px;">
     <div style="margin-top: 100px;">
         <h1>Edit Account</h1>
+        <% if (errors) { %>
+            <p style="color: brown;"><%= errors %></p>
+        <% } %>
         <form action="/edit-profile/<%= user.username %>" method="post">
             <label>Name</label>
             <p><input type="text" value="<%= user.name %>" name="name" class="textbox"></p><br>

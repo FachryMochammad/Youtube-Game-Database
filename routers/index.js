@@ -5,10 +5,8 @@ const auth = require('../middlewares/auth');
 
 router.get('/login', UserController.login);
 router.post('/login', UserController.postLogin);
-
 router.get('/signup', UserController.signup);
 router.post('/signup', UserController.postSignup);
-
 router.get('/logout', UserController.logout);
 
 router.use(auth);
@@ -23,5 +21,6 @@ router.get('/subscribe/:id/:name', Controller.subscribe);
 router.get('/unsubscribe/:id/:name', Controller.unsubscribe);
 router.get('/edit-profile/:username', Controller.getEditProfile);
 router.post('/edit-profile/:username', Controller.postEditProfile);
+router.get('/youtuber-charts', Controller.youtuberCharts);
 
 module.exports = router;

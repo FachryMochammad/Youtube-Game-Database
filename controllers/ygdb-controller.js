@@ -112,7 +112,8 @@ class Controller {
 
     static getEditProfile(req, res) {
         let user = req.session.user;
-        res.render('edit-profile', { user })
+        let errors = req.query.errors;
+        res.render('edit-profile', { user, errors })
     }
 
     static postEditProfile(req, res) {
@@ -125,6 +126,16 @@ class Controller {
             where: { id }
         })
         .then(() => res.redirect('/login'))
+        .catch(err => {
+            res.redirect(`?errors=Your username and name cannot be empty`)
+        })
+    }
+
+    static youtuberCharts(req, res) {
+        Youtuber.findAll()
+        .then(data => {
+            res.render('chart', { data })
+        })
         .catch(err => res.send(err))
     }
 }
