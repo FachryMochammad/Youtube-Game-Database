@@ -1,0 +1,11 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/navbar.ejs') %>
+<br>
+<h1>Edit Account</h1>
+<form action="/edit-profile/<%= user.username %>" method="post">
+    <label>Name</label>
+    <p><input type="text" value="<%= user.name %>" name="name"></p><br>
+    <label>Userame</label>
+    <p><input type="text" value="<%= user.username %>" name="username"></p><br>
+    <button type="submit">Update Your Account</button>
+</form>

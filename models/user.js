@@ -7,9 +7,12 @@ const { hashPassword } = require('../helpers/bcyrpt');
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     static associate(models) {
+      User.belongsToMany(models.Youtuber, { through : models.Subscribe, foreignKey : "user_id" })
+      User.hasMany(models.Subscribe, { foreignKey: "user_id" })
     }
   };
   User.init({
+    name: DataTypes.STRING,
     username: DataTypes.STRING,
     password: DataTypes.STRING
   }, {

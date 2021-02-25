@@ -1,6 +1,6 @@
 const auth = (req, res, next) => {
     if (req.session.user) next()
-    else res.send(`You must login first`)
+    else res.redirect('/login')
 }
 
 module.exports = auth;

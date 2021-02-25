@@ -18,10 +18,11 @@ class UserController {
             if (user && correctPassword) {
                 req.session.user = {
                     id: user.id,
-                    username:user.username
+                    username:user.username,
+                    name: user.name
                 }
                 res.redirect('/')
-            } else res.send(`login failed`)
+            } else res.send(`login failed, username / password is incorrect!`)
         })
         .catch(err => {
             console.log(err);
@@ -35,6 +36,7 @@ class UserController {
 
     static postSignup(req, res) {
         let input = {
+            name: req.body.name,
             username: req.body.username,
             password: req.body.password
         }

@@ -1,0 +1,24 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/navbar.ejs') %>
+<br>
+<h1> Hai, <%= user.name %>!</h1>
+<a href="/edit-profile/<%= user.username %>">Edit your account</a>
+<h2>Subscriptions</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Youtuber Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% subscribe.forEach(el1 => { %>
+            <tr>
+                <% youtuber.forEach(el2 => { %>
+                    <% if (el1.youtuber_id === el2.id) { %>
+                        <td><a href="/youtuber-profile/<%= el2.name %>"><%= el2.name %></a></td>
+                    <% } %>
+                <% }) %>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>

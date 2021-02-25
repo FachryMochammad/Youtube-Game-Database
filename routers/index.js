@@ -18,5 +18,10 @@ router.get('/youtubers', Controller.listYoutuber);
 router.get('/youtuber-profile/:name', Controller.youtuberProfile);
 router.get('/games', Controller.listGame);
 router.get('/game-profile/:name', Controller.gameProfile);
+router.get('/profile', Controller.userProfile);
+router.get('/subscribe/:id/:name', Controller.subscribe);
+router.get('/unsubscribe/:id/:name', Controller.unsubscribe);
+router.get('/edit-profile/:username', Controller.getEditProfile);
+router.post('/edit-profile/:username', Controller.postEditProfile);
 
 module.exports = router;

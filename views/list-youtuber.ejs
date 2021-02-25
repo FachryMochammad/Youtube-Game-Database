@@ -17,7 +17,7 @@
                 <tr>
                     <td><a href="/youtuber-profile/<%= el.name %>"><%= el.name %></a></td>
                     <td><%= el.gender %></td>
-                    <td><%= el.subscribers %></td>
+                    <td><%= el.customTotalSubs() %></td>
                     <td><img src="<%= el.photo_link %>" alt="PewDiePie" style="width:500px;"></td>
                 </tr>
             <% }) %>

@@ -2,8 +2,13 @@
 <br>
 <%- include('./partials/navbar.ejs') %>
 <h1><%= youtuber.name %></h1>
-<p>Subscribers:</p>
-<p><%= youtuber.subscribers %></p>
+<% if (msg) { %>
+    <p style="color: red;"><%= msg %>!!!</p>
+    <button><a href="/unsubscribe/<%= youtuber.id %>/<%= youtuber.name %>">UNSUBSCRIBE</a></button>
+<% } else { %>
+    <button><a href="/subscribe/<%= youtuber.id %>/<%= youtuber.name %>">SUBSCRIBE</a></button>
+<% } %>
+<p><%= youtuber.customTotalSubs() %> Subscribers</p>
 <img src="<%= youtuber.photo_link %>" alt="PewDiePie" style="width:500px;">
 <p><a href="<%= youtuber.youtube_link %>" target="_blank" rel="noopener noreferrer">Visit him on YouTube!</a></p>
 <p>About him:</p>
@@ -12,3 +17,24 @@
 <p><%= youtuber.birth_place %></p>
 <p>Birth year:</p>
 <p><%= youtuber.birth_year %></p>
+<h2>Current games that <%= youtuber.name %> play:</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Photo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% youtuber.YoutuberGames.forEach(el1 => { %>
+            <tr>
+                <% game.forEach(el2 => { %>
+                    <% if (el1.game_id === el2.id) { %>
+                        <td><a href="/game-profile/<%= el2.name %>"><%= el2.name %></a></td>
+                        <td><img src="<%= el2.photo_link %>"></td>
+                    <% } %>
+                <% }) %>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
